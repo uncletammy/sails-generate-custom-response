@@ -19,26 +19,20 @@ $ npm install sails-generate-custom-response
 
 ### Production Usage
 
-##### On the command line
+### Example Usage
 
-```sh
-$ sails generate custom-response 
-```
-
-##### In a node script
+To generate a new customizable server response called `serverMadBro`, do this.
 
 ```javascript
-var path = require('path');
-var sailsgen = require('sails-generate');
-var scope = {
-	rootPath: path.resolve(__dirname)
-};
-sailsgen(require('sails-generate-custom-response'), scope, function (err) {
-	if (err) throw err;
 
-	// It worked.
-});
+catGuy@catGu:/home/sailsStuff/myApp$ sails generate custom-response serverMadBro 566
+
+
 ```
+
+This will create the file `myApp/api/responses/serverMadBro.js` .
+The response can then be issued from a controller or policy using 
+`res.serverMadBro('The Server is so mad bro.  Better try again later',566)`; 
 
 
 ### Development
