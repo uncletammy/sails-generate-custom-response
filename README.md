@@ -3,7 +3,7 @@
 # sails-generate-custom-response
 
 
-A `custom-response` generator for use with the Sails command-line interface.
+A customizable server response generator for use with the Sails command-line interface.
 
 
 ### Installation
@@ -16,8 +16,6 @@ $ npm install sails-generate-custom-response
 ```
 -->
 
-
-### Production Usage
 
 ### Example Usage
 
