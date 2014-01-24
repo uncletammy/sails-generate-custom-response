@@ -21,7 +21,7 @@ $ npm install sails-generate-custom-response
 
 To generate a new customizable server response called `serverMadBro`, do this.
 
-```javascript
+```sh
 
 catGuy@catGu:/home/sailsStuff/myApp$ sails generate custom-response serverMadBro 566
 
