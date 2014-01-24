@@ -1,0 +1,35 @@
+{
+  "name": "sails-generate-custom-response",
+  "version": "0.10.0",
+  "description": "Generate a custom-response for Sails.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "custom-response",
+    "generator",
+    "sails",
+    "generate",
+    "plugin"
+  ],
+  "author": "balderdashy",
+  "license": "MIT",
+  "dependencies": {
+  	"lodash": ">=2.4.x",
+  	"merge-defaults": ">=0.1.0"
+  },
+  "devDependencies": {
+    "sails-generate": "*",
+    "reportback": "*",
+    "fs-extra": "*"
+  },
+  "sails": {
+  	"generator": {
+	 		"name": "custom-response",
+	 		"behavior": "overrides `sails generate custom-response`",
+	 		"sailsVersion": "~0.10.0",
+	 		"main": "lib/index"
+  	}
+  }
+}
